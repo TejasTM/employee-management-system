@@ -8,6 +8,7 @@ function Add({employees,setEmployees,setIsAdding}) {
   const [email,setEmail]=useState("")
   const [salary,setSalary]=useState("")
   const [date,setDate]=useState("")
+  let reg1=/"^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"/
   
 
   const handleAdd=(e)=>{
@@ -16,6 +17,9 @@ function Add({employees,setEmployees,setIsAdding}) {
     {
       return alert("all fields are required")
 
+    }
+    if(!reg1.test.email){
+      return alert(`the email should consists of @ special character `)
     }
 
     const id=employees.length+1;
@@ -60,7 +64,7 @@ function Add({employees,setEmployees,setIsAdding}) {
           value={lastName}
           onChange={ e => setLastName(e.target.value)}
           />
-
+       
         <label htmlFor="email">Email</label>
           <input
           type="email" 
@@ -68,6 +72,7 @@ function Add({employees,setEmployees,setIsAdding}) {
           name='email'
           value={email}
           onChange={ e => setEmail(e.target.value)}
+          
           />
 
         <label htmlFor="salary">Salary</label>
