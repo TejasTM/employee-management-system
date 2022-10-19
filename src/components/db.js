@@ -14,7 +14,7 @@ const employeesData =[
         id:2,
         firstName:"sunil",
         lastName:"kumar",
-        email:"tejas123@gmail.com",
+        email:"sunil1@gmail.com",
         salary:"40000",
         date:"2019-05-01"
     },
@@ -22,7 +22,7 @@ const employeesData =[
         id:3,
         firstName:"Anil",
         lastName:"kumar",
-        email:"tejas123@gmail.com",
+        email:"anil123@gmail.com",
         salary:"40000",
         date:"2019-05-01"
     },
@@ -30,7 +30,7 @@ const employeesData =[
         id:4,
         firstName:"Arun",
         lastName:"shetty",
-        email:"tejas123@gmail.com",
+        email:"arun3@gmail.com",
         salary:"40000",
         date:"2019-05-01"
     }
